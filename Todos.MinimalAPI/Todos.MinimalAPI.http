@@ -1,0 +1,26 @@
+﻿@Todos.MinimalAPI_HostAddress = http://localhost:5089
+
+GET {{Todos.MinimalAPI_HostAddress}}/v1/todos
+
+###
+
+GET {{Todos.MinimalAPI_HostAddress}}/v1/todos/c85e1c1c-de00-4b4d-a0fe-c7dde57905c1
+
+###
+POST {{Todos.MinimalAPI_HostAddress}}/v1/todos
+Content-Type: application/json
+
+{
+    "title":"teste 3"
+}
+
+###
+
+PUT {{Todos.MinimalAPI_HostAddress}}/v1/todos/6945d841-91d6-4017-9503-d59485c2b47e
+Content-Type: application/json
+
+{
+    "id":"6945d841-91d6-4017-9503-d59485c2b47e",
+    "title":"teste de update",
+    "done": true
+}
